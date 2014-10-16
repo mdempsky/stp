@@ -37,9 +37,11 @@ extern "C" {
 ///                          INCLUDES                                ///
 ////////////////////////////////////////////////////////////////////////
 
+#ifdef _WIN32
 // this include should be the first one in the list
 // it is used to catch memory leaks on Windows
 #include "leaks.h"       
+#endif
 
 ////////////////////////////////////////////////////////////////////////
 ///                      MACRO DEFINITIONS                           ///
