@@ -8,7 +8,7 @@
 
 #include "stp/AST/AST.h"
 #include "Symbols.h"
-#include <boost/utility.hpp>
+#include <boost/noncopyable.hpp>
 
 namespace BEEV
 {

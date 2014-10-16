@@ -6,7 +6,7 @@
 #include "extlib-abc/dar.h"
 #include "stp/ToSat/ToSATBase.h"
 #include "stp/ToSat/AIG/BBNodeManagerAIG.h"
-#include <boost/utility.hpp>
+#include <boost/noncopyable.hpp>
 
 namespace BEEV {
 

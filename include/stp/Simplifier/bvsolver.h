@@ -13,7 +13,7 @@
 #include "stp/Simplifier/simplifier.h"
 #include "stp/Simplifier/Symbols.h"
 #include "stp/Simplifier/VariablesInExpression.h"
-#include <boost/utility.hpp>
+#include <boost/noncopyable.hpp>
 
 namespace BEEV
 {

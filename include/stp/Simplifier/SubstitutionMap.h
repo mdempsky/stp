@@ -5,7 +5,7 @@
 #include "stp/STPManager/STPManager.h"
 #include "stp/AST/NodeFactory/SimplifyingNodeFactory.h"
 #include "stp/Simplifier/VariablesInExpression.h"
-#include <boost/utility.hpp>
+#include <boost/noncopyable.hpp>
 
 namespace BEEV
 {

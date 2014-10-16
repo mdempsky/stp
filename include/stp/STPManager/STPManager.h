@@ -14,7 +14,7 @@
 #include "stp/AST/AST.h"
 #include "stp/AST/NodeFactory/HashingNodeFactory.h"
 #include "stp/Sat/SATSolver.h"
-#include <boost/utility.hpp>
+#include <boost/noncopyable.hpp>
 
 namespace BEEV
 {

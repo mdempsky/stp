@@ -19,7 +19,7 @@
 #include "extlib-abc/dar.h"
 #include "stp/ToSat/AIG/BBNodeManagerAIG.h"
 #include "stp/ToSat/BitBlaster.h"
-#include <boost/utility.hpp>
+#include <boost/noncopyable.hpp>
 
 namespace BEEV
 {

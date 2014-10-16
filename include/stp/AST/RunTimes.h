@@ -15,7 +15,7 @@
 #include <string>
 //#include "../sat/utils/System.h"
 #include <iomanip>
-#include <boost/utility.hpp>
+#include <boost/noncopyable.hpp>
 #include <iostream>
 #include <sstream>
 // FIXME: External library include
