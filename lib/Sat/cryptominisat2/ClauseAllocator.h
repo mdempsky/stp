@@ -27,7 +27,9 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #include <stdint.h>
 #endif //_MSC_VER
 
-#include "MemoryPool_src/CMemoryPool.h"
+#include "Clause.h"
+#include "MemoryPool_src/MemoryPool.h"
+#include "SolverTypes.h"
 
 #include "mtl/Vec.h"
 #include <map>
@@ -42,8 +44,6 @@ using namespace MINISAT;
 class Clause;
 class XorClause;
 class Solver;
-
-typedef uint32_t ClauseOffset;
 
 class ClauseAllocator {
     public:
@@ -89,7 +89,11 @@ class ClauseAllocator {
         vec<size_t> currentlyUsedSize;
         vec<uint32_t> origSizes;
 
-        MemPool::CMemoryPool clausePoolBin;
+	struct ClausePoolEntry {
+		Clause clause;
+		Lit lits[2];
+	};
+	MemoryPool<ClausePoolEntry> clausePoolBin;
 
         void* allocEnough(uint32_t size);
 };
@@ -97,4 +101,3 @@ class ClauseAllocator {
 } //NAMESPACE MINISAT
 
 #endif //CLAUSEALLOCATOR_H
-

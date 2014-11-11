@@ -34,7 +34,6 @@ OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWA
 #include "SolverTypes.h"
 #include "PackedRow.h"
 #include "constants.h"
-#include "ClauseAllocator.h"
 
 template <class T>
 uint32_t calcAbstraction(const T& ps) {
@@ -52,6 +51,8 @@ using namespace MINISAT;
 // Clause -- a simple class for representing a clause:
 
 class MatrixFinder;
+
+typedef uint32_t ClauseOffset;
 
 class Clause
 {
